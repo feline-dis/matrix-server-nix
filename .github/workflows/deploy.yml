@@ -18,4 +18,4 @@ jobs:
       - name: Deploy
         run: >
           ssh -i ~/.ssh/deploy_key root@ohana-matrix.xyz
-          nixos-rebuild switch --flake github:feline-dis/matrix-server-nix#ohana
+          nixos-rebuild switch --flake github:feline-dis/matrix-server-nix#ohana --refresh
