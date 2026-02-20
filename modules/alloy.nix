@@ -112,6 +112,10 @@ let
       max_age       = "24h0m0s"
       relabel_rules = discovery.relabel.journal.rules
       forward_to    = [loki.write.grafana_cloud_loki.receiver]
+      labels        = {
+        job      = "integrations/node_exporter",
+        instance = constants.hostname,
+      }
     }
 
     discovery.relabel "journal" {
@@ -145,9 +149,6 @@ in
     configPath = alloyConfig;
     environmentFile = config.sops.templates."alloy-env".path;
   };
-
-  # Alloy needs journal access for log shipping
-  systemd.services.alloy.serviceConfig.SupplementaryGroups = [ "systemd-journal" ];
 
   sops.secrets."grafana_cloud_api_key" = { };
 
