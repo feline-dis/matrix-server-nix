@@ -12,6 +12,7 @@
     ../../modules/livekit.nix
     ../../modules/element-web.nix
     ../../modules/claude-bot.nix
+    ../../modules/alloy.nix
   ];
 
   networking.hostName = "ohana";
