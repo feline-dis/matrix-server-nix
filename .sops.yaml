@@ -1,0 +1,10 @@
+keys:
+  - &local age1cv3tpdesyjue2t4c4gym9e9t2tndhlrlheyv863ha3kxmk5qedzs5sgm68
+  - &server age1q665mhqruj6aywwfrufp46y27ry3qr2srvemje8lktcqyvlwjy8se4zzmx
+
+creation_rules:
+  - path_regex: secrets/ohana\.yaml$
+    key_groups:
+      - age:
+          - *local
+          - *server
