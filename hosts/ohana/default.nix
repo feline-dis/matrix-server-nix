@@ -1,4 +1,4 @@
-{ ... }:
+{ flakeRevision, ... }:
 
 {
   imports = [
@@ -22,5 +22,6 @@
     age.keyFile = "/var/lib/sops-nix/key.txt";
   };
 
+  system.configurationRevision = flakeRevision;
   system.stateVersion = "25.05";
 }

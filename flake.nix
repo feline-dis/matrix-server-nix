@@ -40,6 +40,7 @@
         inherit system;
         specialArgs = {
           inherit feline-matrix matrix-claude-bot sops-nix disko;
+          flakeRevision = self.rev or "dirty";
         };
         modules = [
           sops-nix.nixosModules.sops
