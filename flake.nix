@@ -52,6 +52,7 @@
       deploy.nodes.ohana = {
         hostname = "ohana-matrix.xyz";
         sshUser = "root";
+        remoteBuild = true;
         profiles.system = {
           path = deploy-rs.lib.${system}.activate.nixos
             self.nixosConfigurations.ohana;
