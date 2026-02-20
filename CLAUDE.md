@@ -22,7 +22,7 @@ nix build .#nixosConfigurations.ohana.config.system.build.toplevel
 deploy .#ohana
 
 # Deploy with local input overrides (for testing changes to companion repos)
-deploy .#ohana --override-input feline-matrix path:/home/felinedis/develop/feline-matrix
+deploy .#ohana --override-input feline-matrix path:/home/felinedis/develop/ohana-matrix-server-registration
 
 # Edit encrypted secrets
 sops secrets/ohana.yaml
@@ -32,7 +32,7 @@ sops secrets/ohana.yaml
 
 ### Flake Inputs
 - **nixpkgs** (unstable): Base packages and NixOS modules
-- **feline-matrix**: Registration proxy (Go binary, separate repo)
+- **feline-matrix**: Registration proxy (Go binary, [ohana-matrix-server-registration](https://github.com/feline-dis/ohana-matrix-server-registration))
 - **matrix-claude-bot**: Claude AI bot for Matrix (Go binary, separate repo)
 - **sops-nix**: Secret decryption at activation time
 - **deploy-rs**: Push-based deployment with magic rollback

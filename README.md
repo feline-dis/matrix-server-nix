@@ -7,7 +7,7 @@ NixOS flake that declaratively deploys a Matrix homeserver stack to `ohana-matri
 | Service | Port | Description |
 |---|---|---|
 | [tuwunel](https://github.com/continuwuity/tuwunel) | 6167 | Matrix homeserver (conduwuit fork) |
-| [registration-proxy](https://github.com/feline-dis/feline-matrix) | 8008 | Invite-gated registration frontend |
+| [registration-proxy](https://github.com/feline-dis/ohana-matrix-server-registration) | 8008 | Invite-gated registration frontend |
 | [Caddy](https://caddyserver.com/) | 80, 443, 8448 | Reverse proxy, TLS, static files |
 | [LiveKit](https://livekit.io/) | 7880, 7881, 50000-50200/udp | WebRTC SFU for calls |
 | [lk-jwt-service](https://github.com/element-hq/lk-jwt-service) | 8080 | LiveKit JWT token service |
@@ -51,7 +51,7 @@ nix develop -c deploy .#ohana
 To deploy with local changes to a companion repo:
 
 ```bash
-nix develop -c deploy .#ohana --override-input feline-matrix path:../feline-matrix
+nix develop -c deploy .#ohana --override-input feline-matrix path:../ohana-matrix-server-registration
 ```
 
 ## Verify deployment

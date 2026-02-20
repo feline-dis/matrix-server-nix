@@ -49,16 +49,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1771546045,
-        "narHash": "sha256-q9QYh7g+6ZffLnUgSFbQFl/xQrwaUasBj4ORdSd8h3o=",
+        "lastModified": 1771578752,
+        "narHash": "sha256-pHjxW+i4l6ym0+rtVIL+RM6xQG7dvlHTbvE5rfls6dw=",
         "owner": "feline-dis",
-        "repo": "feline-matrix",
-        "rev": "572f602a818f44b24251487b9b360ea032ed3a72",
+        "repo": "ohana-matrix-server-registration",
+        "rev": "b8fab0570bedb8dbdd7062f410df1bbe58abf5c3",
         "type": "github"
       },
       "original": {
         "owner": "feline-dis",
-        "repo": "feline-matrix",
+        "repo": "ohana-matrix-server-registration",
         "type": "github"
       }
     },

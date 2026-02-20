@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     feline-matrix = {
-      url = "github:feline-dis/feline-matrix";
+      url = "github:feline-dis/ohana-matrix-server-registration";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
