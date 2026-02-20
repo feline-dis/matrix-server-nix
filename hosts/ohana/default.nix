@@ -13,6 +13,7 @@
     ../../modules/element-web.nix
     ../../modules/claude-bot.nix
     ../../modules/alloy.nix
+    ../../modules/fail2ban.nix
   ];
 
   networking.hostName = "ohana";
