@@ -60,6 +60,12 @@ in
         '';
       };
 
+      "jelly.felinedev.xyz" = {
+        extraConfig = ''
+          reverse_proxy 100.75.8.52:8096
+        '';
+      };
+
       "ohana-matrix.xyz:8448" = {
         extraConfig = ''
           reverse_proxy localhost:6167
