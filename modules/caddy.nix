@@ -65,12 +65,6 @@ in
           reverse_proxy localhost:6167
         '';
       };
-
-      "vault.felinedev.xyz" = {
-        extraConfig = ''
-          reverse_proxy localhost:8200
-        '';
-      };
     };
   };
 }

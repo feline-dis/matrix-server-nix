@@ -14,7 +14,6 @@
     ../../modules/claude-bot.nix
     ../../modules/alloy.nix
     ../../modules/fail2ban.nix
-    ../../modules/vault.nix
   ];
 
   networking.hostName = "ohana";
