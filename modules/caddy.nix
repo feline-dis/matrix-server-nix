@@ -66,6 +66,12 @@ in
         '';
       };
 
+      "seerr.felinedev.xyz" = {
+        extraConfig = ''
+          reverse_proxy 100.75.8.52:5055
+        '';
+      };
+
       "ohana-matrix.xyz:8448" = {
         extraConfig = ''
           reverse_proxy localhost:6167
